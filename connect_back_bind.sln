@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "connect_back", "connect_back_bind\connect_back.csproj", "{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bind", "bind\bind.csproj", "{1454CAB8-7AB8-4CC1-835D-7C4E223523BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1454CAB8-7AB8-4CC1-835D-7C4E223523BA}.Debug|x86.ActiveCfg = Debug|x86
+		{1454CAB8-7AB8-4CC1-835D-7C4E223523BA}.Debug|x86.Build.0 = Debug|x86
+		{1454CAB8-7AB8-4CC1-835D-7C4E223523BA}.Release|x86.ActiveCfg = Release|x86
+		{1454CAB8-7AB8-4CC1-835D-7C4E223523BA}.Release|x86.Build.0 = Release|x86
+		{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}.Debug|x86.ActiveCfg = Debug|x86
+		{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}.Debug|x86.Build.0 = Debug|x86
+		{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}.Release|x86.ActiveCfg = Release|x86
+		{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = connect_back_bind\connect_back.csproj
+	EndGlobalSection
+EndGlobal
