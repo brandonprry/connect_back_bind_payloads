@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "connect_back", "connect_back_bind\connect_back.csproj", "{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bind", "bind\bind.csproj", "{1454CAB8-7AB8-4CC1-835D-7C4E223523BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "connect_back", "connect_back\connect_back.csproj", "{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{F7BA2742-4CF2-452F-BDC4-42D5930BB57B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = connect_back_bind\connect_back.csproj
+		StartupItem = bind\bind.csproj
 	EndGlobalSection
 EndGlobal

